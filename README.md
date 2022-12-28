@@ -8,10 +8,10 @@ This is an early prototype and although it should ultimately be able to convert 
 
 This project needs:
 
-    - [CMake](https://cmake.org/) > 3.14
-    - C++14 compatible compiler, clang, g++, MSVC++ (only tested with clang yet)
-    - An installed version of [USD](https://github.com/PixarAnimationStudios/USD/releases/tag/v22.11), version 22.08 works, the other versions and prepackage usd libs have not been tested.
-    - An internet connection: Assimp will be downloaded and compiled during the build process, no need for installing it beforehand, but a internet connection will be necessary for the download.
+- [CMake](https://cmake.org/) > 3.14
+- C++14 compatible compiler, clang, g++, MSVC++ (only tested with clang yet)
+- An installed version of [USD](https://github.com/PixarAnimationStudios/USD/releases/tag/v22.11), version 22.08 works, the other versions and prepackage usd libs have not been tested.
+- An internet connection: Assimp will be downloaded and compiled during the build process, no need for installing it beforehand, but a internet connection will be necessary for the download.
 
 
 ## Building
