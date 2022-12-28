@@ -51,7 +51,3 @@ The format ply should now be recognized by usd, you can test using usdview or us
     usdcat tests/example1.ply -o example1.usda
 
 
-## Licence
-
-
-
