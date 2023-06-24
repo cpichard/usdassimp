@@ -29,7 +29,7 @@ TF_REGISTRY_FUNCTION(TfType) { SDF_DEFINE_FILE_FORMAT(UsdAssimpFileFormat, SdfFi
 
 UsdAssimpFileFormat::UsdAssimpFileFormat()
     : SdfFileFormat(UsdAssimpFileFormatTokens->Id, UsdAssimpFileFormatTokens->Version, UsdAssimpFileFormatTokens->Target,
-                    UsdAssimpFileFormatTokens->Id) {}
+                    UsdAssimpFileFormatTokens->Extension) {}
 
 UsdAssimpFileFormat::~UsdAssimpFileFormat() {}
 
