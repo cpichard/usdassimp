@@ -8,10 +8,10 @@ This is an early prototype and although it should ultimately be able to convert 
 
 This project needs:
 
-    - [CMake](https://cmake.org/) > 3.14
-    - C++14 compatible compiler, clang, g++, MSVC++ (only tested with clang yet)
-    - An installed version of [USD](https://github.com/PixarAnimationStudios/USD/releases/tag/v22.11), version 22.08 works, the other versions and prepackaged usd libs have not been tested.
-    - An internet connection: Assimp will be downloaded and compiled during the build process, no need for installing it beforehand, but an internet connection will be necessary for the download.
+- [CMake](https://cmake.org/) > 3.14
+- C++14 compatible compiler, clang, g++, MSVC++ (only tested with clang yet)
+- An installed version of [USD](https://github.com/PixarAnimationStudios/USD/releases/tag/v23.05), version 23.05 works, the other versions and prepackaged usd libs have not been tested.
+- An internet connection: Assimp will be downloaded and compiled during the build process, no need for installing it beforehand, but an internet connection will be necessary for the download.
 
 
 ## Building
@@ -29,7 +29,7 @@ Setting up the project on linux or mac could look like:
     cd usdassimp
     mkdir build
     cd build
-    cmake -Dpxr_DIR=/path/to/usd-22.08 -DCMAKE_INSTALL_PREFIX=/path/to/usdassimp-install ..
+    cmake -Dpxr_DIR=/path/to/usd-23.05 -DCMAKE_INSTALL_PREFIX=/path/to/usdassimp-install ..
 
 NOTE: be sure to replace "/path/to/xxxx" with your paths.
 
@@ -50,4 +50,6 @@ The format ply should now be recognized by usd, you can test using usdview or us
 
     usdcat tests/example1.ply -o example1.usda
 
+Or by running the regression tests in the build folder:
 
+    ctest ..
