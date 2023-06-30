@@ -51,6 +51,7 @@ target_compile_definitions(usdAssimp PRIVATE NOMINMAX)
 #target_link_libraries(usdAssimp assimp ${PXR_LIBRARIES})
 #target_link_libraries(usdAssimp PRIVATE assimp ${ASSIMP_LIBRARIES} ${PXR_LIBRARIES})
 #target_include_directories(usdAssimp PRIVATE ${ASSIMP_INCLUDE_DIR} ${PXR_INCLUDE_DIRS})
+target_compile_options(usdAssimp PRIVATE $<$<CXX_COMPILER_ID:MSVC>: /Zc:inline- >)
 
 target_link_libraries(usdAssimp PRIVATE assimp ${PXR_LIBRARIES})
 target_include_directories(usdAssimp PRIVATE ${PXR_INCLUDE_DIRS})
